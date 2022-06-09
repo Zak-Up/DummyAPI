@@ -1,5 +1,7 @@
 import React from 'react';
 import { useForm } from '../hooks/useForm';
+import Loader from '../components/Loader';
+import Message from '../components/Message';
 
 const initialForm = {
   name: '',
@@ -96,6 +98,8 @@ const ContactForm = () => {
            ></textarea>
            <input type='submit' value='Enviar'></input>
       </form>
+      {loading && <Loader/>}
+      {response && <Message/>}
     </div>
   );
 };

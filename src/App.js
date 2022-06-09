@@ -9,7 +9,9 @@ function App() {
     <div className="App">
       <h1>Practicas</h1>
       <ContactForm/>
+      <hr/>
       <Users/>
+      <hr/>
       <Products/>
     </div>
   );
